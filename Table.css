@@ -1,0 +1,81 @@
+body{
+    margin: 0%;
+    background-color:rgba(247, 251, 251, 0.961);
+    counter-reset: S;
+}
+header{
+    padding: 5px;
+    background-color: rgb(249, 230, 255);
+    border-bottom: 1px solid black ;
+    text-align: center;
+    top: 0;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 8px rgb(88, 88, 88);
+    z-index: 5;
+    font-family: 'Roboto Mono', monospace;
+}
+main{
+    position: relative;
+    text-align: center;
+    width: 800px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    box-shadow: 0px 2px 10px rgb(181, 230, 244);
+}
+h2{
+    padding-top: 5px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    font-family: 'Roboto Mono', monospace;
+}
+table,tr,td,th{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 12px 40px ;
+}
+th{
+    background-color: rgba(101, 227, 255, 0.491);
+    margin-top: 0%;
+    font-family: 'PT Serif', serif;
+}
+tr:nth-child(odd){
+    background-color: rgba(250, 255, 181, 0.868);
+}
+tr td:first-child::after{
+    counter-increment:S;
+    content: counter(S);
+}
+button{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgba(31, 250, 79, 0.589) ;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+button:nth-child(2)
+{
+    background-color: rgba(255, 200, 154, 0.845);
+
+}
+button:hover{
+    background-color: rgba(248, 13, 29, 0.705);
+    color:white;
+    box-shadow: 0px 2px 8px rgb(17, 22, 23);
+}
+button:active{
+    background-color: darkgreen;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Mono&family=Teko:wght@300&family=Xanh+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Table.css">
+</head>
+<body>
+    <header>
+        <nav>
+           <h1>Assignment-1</h1> 
+        </nav>
+    </header>
+    <main>
+    <table id="mytable">
+        <h2>Table</h2>
+            <tr>
+                <th>Sl.No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Vamsi</td>
+               <td>Krishna</td>
+               <td>Proddatur</td>
+               <td>India</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Prema</td>
+                <td>Sai</td>
+                <td>Proddatur</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Akhil</td>
+                <td>Shetty</td>
+                <td>Kuppam</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Mahesh</td>
+                <td>Mass</td>
+                <td>Anantapur</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Sunny</td>
+                <td>Leone</td>
+                <td>Mumbai</td>
+                <td>India</td>
+            </tr>
+    </table>
+    <div>
+        <button type="button" onclick="AddTop()">Add Row Top</button>
+        <button type="button" onclick="AddBottom()">Add Row Bottom</button>
+    </div>
+    </main>
+        <script>
+        function AddTop()
+        {
+         var table=document.getElementById("mytable")
+           var row= mytable.insertRow(1);
+           var cell1=row.insertCell(0);
+           var cell2=row.insertCell(1);
+           var cell3=row.insertCell(2);
+           var cell4=row.insertCell(3);
+           var cell5=row.insertCell(4);
+           cell1.innerHTML='';
+           cell2.innerHTML="";
+           cell3.innerHTML="";
+           cell4.innerHTML="";
+           cell5.innerHTML="";
+
+        }
+        function AddBottom()
+        {
+            var table=document.getElementById("mytable")
+            var row=mytable.insertRow(-1);
+            var cell1=row.insertCell(0);
+            var cell2=row.insertCell(1);
+            var cell3=row.insertCell(2);
+            var cell4=row.insertCell(3);
+            var cell5=row.insertCell(4);
+            cell1.innerHTML='';
+            cell2.innerHTML="";
+           cell3.innerHTML="";
+           cell4.innerHTML="";
+           cell5.innerHTML="";
+
+        }
+    </script>
+</body>
+</html>
